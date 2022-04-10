@@ -13,6 +13,7 @@
 		BA453B2C280272FA00391C29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA453B2A280272FA00391C29 /* Main.storyboard */; };
 		BA453B2E280272FC00391C29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA453B2D280272FC00391C29 /* Assets.xcassets */; };
 		BA453B31280272FC00391C29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA453B2F280272FC00391C29 /* LaunchScreen.storyboard */; };
+		BA453B39280281C900391C29 /* ch05.pdf in Resources */ = {isa = PBXBuildFile; fileRef = BA453B38280281C900391C29 /* ch05.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BA453B2D280272FC00391C29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA453B30280272FC00391C29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA453B32280272FC00391C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA453B38280281C900391C29 /* ch05.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ch05.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				BA453B26280272FA00391C29 /* SceneDelegate.swift */,
 				BA453B28280272FA00391C29 /* ViewController.swift */,
 				BA453B2A280272FA00391C29 /* Main.storyboard */,
+				BA453B38280281C900391C29 /* ch05.pdf */,
 				BA453B2D280272FC00391C29 /* Assets.xcassets */,
 				BA453B2F280272FC00391C29 /* LaunchScreen.storyboard */,
 				BA453B32280272FC00391C29 /* Info.plist */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA453B39280281C900391C29 /* ch05.pdf in Resources */,
 				BA453B31280272FC00391C29 /* LaunchScreen.storyboard in Resources */,
 				BA453B2E280272FC00391C29 /* Assets.xcassets in Resources */,
 				BA453B2C280272FA00391C29 /* Main.storyboard in Resources */,
