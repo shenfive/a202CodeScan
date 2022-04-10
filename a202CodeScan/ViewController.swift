@@ -32,8 +32,8 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         avCaptureSession.addOutput(avCaptureMetadatOutput)
         
         
-        
-        
+        //加上支援的類別，這必需要加入 session 之後再做，不然會閃退
+        avCaptureMetadatOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.qr, AVMetadataObject.ObjectType.code128, AVMetadataObject.ObjectType.code39, AVMetadataObject.ObjectType.code93, AVMetadataObject.ObjectType.upce, AVMetadataObject.ObjectType.pdf417, AVMetadataObject.ObjectType.ean13, AVMetadataObject.ObjectType.aztec]
         
         //先建一個 UIView 做為輸出的影像，把圖層加到畫面中的圖層中，讓使用者可以看到
         let avCaptureVidoePreviewLayer = AVCaptureVideoPreviewLayer(session: avCaptureSession)
@@ -46,7 +46,15 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         
     }
     
-
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects:
+                        [AVMetadataObject], from connection: AVCaptureConnection) {
+        if metadataObjects.count > 0 {
+        let machineReabableCode =
+        metadataObjects[0] as! AVMetadataMachineReadableCodeObject
+        outputLabel.text = machineReabableCode.stringValue
+        avCaptureSession.stopRunning() }
+    }
+    
 
 }
 
