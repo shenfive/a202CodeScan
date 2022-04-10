@@ -55,6 +55,9 @@ class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         avCaptureSession.stopRunning() }
     }
     
-
+    @IBAction func reScan(_ sender: Any) {
+        avCaptureSession.startRunning()
+    }
+    
 }
 
